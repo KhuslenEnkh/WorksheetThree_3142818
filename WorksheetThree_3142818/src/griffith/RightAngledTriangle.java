@@ -30,18 +30,20 @@ public class RightAngledTriangle extends Shape {
         this.height = height;
     }
 
+    //Calculates the area of the right-angled triangle.
     @Override
     public double area() {
     	return (base * height) / 2;
     }
 
+    //Calculates the perimeter of the right-angled triangle.
     @Override
     public double perimeter() {
     	double hypotenuse = Math.sqrt(base * base + height * height);
         return base + height + hypotenuse;
     }
 
-    // Override toString
+    //Returns a string representation of the triangle.
     @Override
     public String toString() {
         return super.toString() + ", Base: " + base + ", Height: " + height;

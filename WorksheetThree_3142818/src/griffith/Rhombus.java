@@ -40,17 +40,19 @@ public class Rhombus extends Shape {
         this.side = side;
     }
 
+    //Calculates the area of the rhombus.
     @Override
     public double area() {
     	return (diagonal1 * diagonal2) / 2;
     }
 
+    //Calculates the perimeter of the rhombus.
     @Override
     public double perimeter() {
     	return 4 * side;
     }
 
-    // Override toString
+    //Returns a string representation of the rhombus.
     @Override
     public String toString() {
         return super.toString() + ", Diagonals: " + diagonal1 + " & " + diagonal2 + ", Side: " + side;

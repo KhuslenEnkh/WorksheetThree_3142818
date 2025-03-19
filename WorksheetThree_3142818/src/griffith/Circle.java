@@ -20,17 +20,19 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    //Calculates the area of the circle.
     @Override
     public double area() {
     	return Math.PI * radius * radius;  //Implemented area method.
     }
 
+    //Calculates the perimeter of the circle.
     @Override
     public double perimeter() {
     	return 2 * Math.PI * radius; //Implemented perimeter method.
     }
 
-    // Override toString
+    //Calculates the area of the circle.
     @Override
     public String toString() {
         return super.toString() + ", Radius: " + radius;
