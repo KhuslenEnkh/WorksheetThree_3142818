@@ -3,7 +3,7 @@ package griffith;
 
 public class RightAngledTriangle extends Shape {
 
-	private double base;
+    private double base;
     private double height;
 
     //Constructor
