@@ -3,8 +3,8 @@ package griffith;
 
 public class Circle extends Shape {
 
-	private double radius;
-
+    private double radius;
+	
     //Constructor
     public Circle(double radius) {
         super("Circle");
