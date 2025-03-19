@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
 
 class ShapeTest {
 
-	private static final double EPSILON = 0.0;
-
+    private static final double EPSILON = 0.0;
+	
     @Test
     void testCircle() {
         Circle circle = new Circle(3.5);
