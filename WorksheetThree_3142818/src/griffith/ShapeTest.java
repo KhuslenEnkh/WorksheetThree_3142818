@@ -7,34 +7,16 @@ import org.junit.jupiter.api.Test;
 
 class ShapeTest {
 
-	@Test
-	void testShape() {
-		fail("Not yet implemented");
-	}
+	private static final double EPSILON = 0.0;
 
-	@Test
-	void testGetName() {
-		fail("Not yet implemented");
-	}
+    // Unit Test for Circle
+    @Test
+    void testCircle() {
+        Circle circle = new Circle(3.5);
 
-	@Test
-	void testSetName() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testArea() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testPerimeter() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testToString() {
-		fail("Not yet implemented");
-	}
-
+        assertEquals(3.5, circle.getRadius(), EPSILON);
+        assertEquals(Math.PI * 3.5 * 3.5, circle.area(), EPSILON);
+        assertEquals(2 * Math.PI * 3.5, circle.perimeter(), EPSILON);
+        assertEquals("Shape: Circle, Radius: 3.5", circle.toString());
+    }
 }
