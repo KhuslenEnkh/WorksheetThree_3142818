@@ -3,7 +3,7 @@ package griffith;
 
 public class Rhombus extends Shape {
 	
-	private double diagonal1;
+    private double diagonal1;
     private double diagonal2;
     private double side;
 
