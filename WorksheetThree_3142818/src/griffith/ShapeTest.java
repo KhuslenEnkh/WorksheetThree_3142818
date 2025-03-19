@@ -3,6 +3,8 @@ package griffith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 
 class ShapeTest {
@@ -42,4 +44,25 @@ class ShapeTest {
         assertEquals("Shape: Right-Angled Triangle, Base: 3.0, Height: 4.0", triangle.toString());
     }
     
+    //Integration Test with ArrayList<Shape>
+    @Test
+    void testShapeList() {
+        ArrayList<Shape> shapes = new ArrayList<>();
+
+        // Add two of each shape
+        shapes.add(new Circle(2.5));
+        shapes.add(new Circle(4.0));
+
+        shapes.add(new Rhombus(5, 7, 4));
+        shapes.add(new Rhombus(8, 10, 6));
+
+        shapes.add(new RightAngledTriangle(5, 12));
+        shapes.add(new RightAngledTriangle(6, 8));
+
+        // Loop through and test area and perimeter
+        for (Shape shape : shapes) {
+            assertTrue(shape.area() > 0, "Area should be positive");
+            assertTrue(shape.perimeter() > 0, "Perimeter should be positive");
+        }
+    }
 }
