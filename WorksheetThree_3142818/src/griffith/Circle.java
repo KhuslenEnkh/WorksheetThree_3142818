@@ -22,12 +22,12 @@ public class Circle extends Shape {
 
     @Override
     public double area() {
-        return 0; 
+    	return Math.PI * radius * radius;  //Implemented area method.
     }
 
     @Override
     public double perimeter() {
-        return 0; 
+    	return 2 * Math.PI * radius; //Implemented perimeter method.
     }
 
     // Override toString
