@@ -44,7 +44,7 @@ class ShapeTest {
         assertEquals("Shape: Right-Angled Triangle, Base: 3.0, Height: 4.0", triangle.toString());
     }
     
-    //Integration Test with ArrayList<Shape>
+    //Integration Test with ArrayList<Shape> shapes
     @Test
     void testShapeList() {
         ArrayList<Shape> shapes = new ArrayList<>();
