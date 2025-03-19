@@ -9,7 +9,6 @@ class ShapeTest {
 
 	private static final double EPSILON = 0.0;
 
-    // Unit Test for Circle
     @Test
     void testCircle() {
         Circle circle = new Circle(3.5);
@@ -19,4 +18,18 @@ class ShapeTest {
         assertEquals(2 * Math.PI * 3.5, circle.perimeter(), EPSILON);
         assertEquals("Shape: Circle, Radius: 3.5", circle.toString());
     }
+    
+    @Test
+    void testRhombus() {
+        Rhombus rhombus = new Rhombus(6, 8, 5);
+
+        assertEquals(6, rhombus.getDiagonal1(), EPSILON);
+        assertEquals(8, rhombus.getDiagonal2(), EPSILON);
+        assertEquals(5, rhombus.getSide(), EPSILON);
+        assertEquals((6 * 8) / 2, rhombus.area(), EPSILON);
+        assertEquals(4 * 5, rhombus.perimeter(), EPSILON);
+        assertEquals("Shape: Rhombus, Diagonals: 6.0 & 8.0, Side: 5.0", rhombus.toString());
+    }
+    
+    
 }
