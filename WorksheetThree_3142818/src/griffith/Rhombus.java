@@ -1,3 +1,4 @@
+//Khuslen Enkh-Amgalan, ID:3142818, 19/03/2025
 package griffith;
 
 public class Rhombus extends Shape {
