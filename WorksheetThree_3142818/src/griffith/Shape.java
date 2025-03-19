@@ -3,8 +3,8 @@ package griffith;
 
 public abstract class Shape {
 	
-	private String name;
-
+    private String name;
+	
     //Constructor
     public Shape(String name) {
         this.name = name;
