@@ -31,5 +31,15 @@ class ShapeTest {
         assertEquals("Shape: Rhombus, Diagonals: 6.0 & 8.0, Side: 5.0", rhombus.toString());
     }
     
+    @Test
+    void testRightAngledTriangle() {
+        RightAngledTriangle triangle = new RightAngledTriangle(3, 4);
+
+        assertEquals(3, triangle.getBase(), EPSILON);
+        assertEquals(4, triangle.getHeight(), EPSILON);
+        assertEquals((3 * 4) / 2, triangle.area(), EPSILON);
+        assertEquals(3 + 4 + Math.sqrt(3 * 3 + 4 * 4), triangle.perimeter(), EPSILON);
+        assertEquals("Shape: Right-Angled Triangle, Base: 3.0, Height: 4.0", triangle.toString());
+    }
     
 }
